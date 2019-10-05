@@ -7,20 +7,17 @@ body
     font-family: 'Roboto', sans-serif
     font-size: 15px
 
-.container 
+.container
     max-width: 1170px
     margin: 0 auto
 
-/* 
-    BUTTONS
- */
 .button
     display: block
     text-transform: uppercase
     text-decoration: none
     text-align: center
     color: #fff
-    font-size: 20px 
+    font-size: 20px
     font-weight: 500
     border-radius: 4px
     &_primary
@@ -39,23 +36,19 @@ body
     &_lg
         width: 222px
         line-height: 59px
-    &_md 
+    &_md
         width: 159px
         line-height: 59px
     &_sm
         width: 108px
         line-height: 47px
 
-
-/*
-    TOP BAR 
- */
-.topbar 
+.topbar
     padding: 10px 0
     background-color: #2c3e50
     position: relative
 
-.topbar-nav 
+.topbar-nav
     display: flex
     justify-content: space-between
     align-items: center
@@ -72,7 +65,7 @@ body
             top: 0
             height: 100%
             width: 1px
-        &::after 
+        &::after
             background-color: #17202a
         &::before
             background-color: #374d63
@@ -84,7 +77,7 @@ body
         &:hover
             text-decoration: underline
     &__icon
-        padding-right: 10px  
+        padding-right: 10px
     &__register
         color: $primary-color
         text-decoration: none
@@ -95,12 +88,12 @@ body
     padding: 0
     &_footer
         margin-top: 20px
-    &__item 
+    &__item
         list-style: none
         padding: 0 10px
         &_footer
-        padding: 0 25px 0 0
-        font-size: 25px
+            padding: 0 25px 0 0
+            font-size: 25px
     &__link
         text-decoration: none
         color: #fff
@@ -108,12 +101,7 @@ body
         &:hover
             color: $primary-color
 
-
-/* 
-    HEADER
- */
-
-.nav 
+.nav
     display: flex
     justify-content: space-between
     align-items: center
@@ -134,17 +122,17 @@ body
         text-transform: uppercase
         text-decoration: none
         color: #5d6e80
-        transition: .4s 
+        transition: .4s
         &:hover
             color: lighten($primary-color, 20%)
 
-.active 
+.active
     color: $primary-color
 
 .nav-search
     display: flex
     justify-content: center
-    align-items: center 
+    align-items: center
     font-size: 19px
     color: #2c3e50
     width: 42px
@@ -161,15 +149,11 @@ body
     width: 152px
     height: 30px
 
-
-/* 
-    BANNER
- */
 .banner
     background: url('../img/banner__bg.jpg') no-repeat center top
     background-size: cover
     background-color: #2c3e50
-    padding-top: 280px  
+    padding-top: 280px
     padding-bottom: 220px
     text-align: center
     color: #fff
@@ -189,7 +173,6 @@ body
         font-size: 20px
         font-weight: 500
         margin: 0 0 45px 0
-
 
 .holidays-block
     background-color: #2c3e50
@@ -233,7 +216,7 @@ body
             height: 49px
             border: 1px solid #19242e
             background-color: #ffffff
-            &[type=text] 
+            &[type=text]
                 padding-left: 10px
         &__icon
         &__button
@@ -259,7 +242,7 @@ body
     &-offer
         height: 550px
         position: relative
-        overflow: hidden  
+        overflow: hidden
     &-header
         text-align: center
         &__title
@@ -278,16 +261,22 @@ body
                 color: #9eafc0
 
 .offer-slider
-    display: flex
     align-items: center
-    position: absolute
-    bottom: 19%
-    left: -10%
-    height: 268px
-    &_active
-        height: 310px
+    &-container
+        width: 100%
+        height: 490px
+    .swiper-slide-next
+        height: 310px !important
         border: 5px solid #1dd2af !important
         background-color: #2c3e50 !important
+        .slider-content
+            &__title
+                margin-top: 23px
+                color: #fff
+            &__subtitle
+                color: #8899a8
+            &__icon
+                color: #fff !important
     &__img
         height: 196px
         width: 268px
@@ -300,28 +289,23 @@ body
         border: 5px solid #eeeeee
         background-color: #eeeeee
         width: 268px
-        cursor: pointer
+        height: 250px
+        transition: all .4s ease-in-out
 .slider-content
     position: relative
     padding-left: 15px
     &__title
         margin: 10px 0 5px 0
         font-weight: 400
-        &_active
-            margin-top: 23px
-            color: #fff 
+        transition: margin .2s
     &__subtitle
         margin: 0
         font-size: 13px
-        &_active
-            color: #8899a8
     &__icon
         position: absolute
         top: 2px
         right: 18px
         font-size: 29px
-        &_active
-            color: #fff !important
 
 .type
     display: flex
@@ -427,7 +411,6 @@ body
             background-color: #148f77
             border-color: #148f77
 
-
 .news
     &-box
         width: 165px
@@ -451,7 +434,6 @@ body
             padding: 5px
             border: 1px solid #ffffff
 
-
 .tags
     width: 240px
     &__item
@@ -460,14 +442,14 @@ body
         text-decoration: none
         border: 1px solid #ffffff
         padding: 7px
-        margin: 0 2px 5px 0 
+        margin: 0 2px 5px 0
         display: inline-block
         &:hover
             color: #2c3e50
             background-color: #fff
             transition: .4s
 
-.footer-nav 
+.footer-nav
     display: flex
     justify-content: center
 .footer-menu
@@ -487,7 +469,7 @@ body
         margin-right: 10px
         &_active
             color: #1dd2af
-        &:hover 
+        &:hover
             color: #1dd2af
             transition: .4s
 
@@ -510,4 +492,3 @@ body
         position: absolute
         top: 18px
         right: -7px
-
