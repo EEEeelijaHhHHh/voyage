@@ -335,29 +335,32 @@ body
     color: $primary-color
     border-color: $primary-color
 
-.clients-block
-    display: flex
-    position: absolute
-    top: 37%
-    left: -20%
-
-.clients-item
-    margin-right: 17px
-    border: 1px solid #dedede
-    height: 140px
-    width: 475px
-    opacity: .5
-    &__text
-        margin: 23px 25px 0 20px
-        color: #4d4d4d
-    &__author
-        margin: 10px 0 0 20px
-        color: #1dd2af
-        font-size: 18px
-    &__country
-        margin: 5px 0 0 20px
-        color: #b2b2b2
-        font-size: 13px
+.clients
+    &-container
+        width: 100%
+        padding-top: 50px
+    &-wrapper
+        .swiper-slide-next
+            opacity: 1
+            border-top: 5px solid #1dd2af
+    &-item
+        margin-right: 17px
+        border: 1px solid #dedede
+        height: 140px
+        width: 475px
+        opacity: .5
+        transition: .2s ease-in
+        &__text
+            margin: 23px 25px 0 20px
+            color: #4d4d4d
+        &__author
+            margin: 10px 0 0 20px
+            color: #1dd2af
+            font-size: 18px
+        &__country
+            margin: 5px 0 0 20px
+            color: #b2b2b2
+            font-size: 13px
 
 .footer
     position: relative
